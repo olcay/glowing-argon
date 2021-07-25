@@ -1,10 +1,10 @@
 ﻿using System.Security.Claims;
 using System.Threading.Tasks;
-using CreativeTim.Argon.DotNetCore.Free.Models.Identity;
+using Ookgewoon.Web.Models.Identity;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
 
-namespace CreativeTim.Argon.DotNetCore.Free.Infrastructure.ApplicationUserClaims
+namespace Ookgewoon.Web.Infrastructure.ApplicationUserClaims
 {
     public class ApplicationUserClaimsPrincipalFactory : UserClaimsPrincipalFactory<ApplicationUser, IdentityRole>
     {

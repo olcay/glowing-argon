@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace CreativeTim.Argon.DotNetCore.Free.Infrastructure
+namespace Ookgewoon.Web.Infrastructure
 {
     [Route("[controller]/[action]", Name = "[controller]_[action]")]
     public abstract class BaseController : Controller

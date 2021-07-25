@@ -64,17 +64,17 @@ The documentation for the Argon Dashboard ASP.NET Core is hosted at [website](ht
 
 ```
 │
-│   CreativeTim.Argon.DotNetCore.Free.sln
+│   Ookgewoon.Web.sln
 │   docker-compose.dcproj
 │   docker-compose.override.yml
 │   docker-compose.yml
 │   ISSUES_TEMPLATE.md
 │   LICENSE
 │   README.md
-├───CreativeTim.Argon.DotNetCore.Free
+├───Ookgewoon.Web
 │   │   appsettings.Development.json
 │   │   appsettings.json
-│   │   CreativeTim.Argon.DotNetCore.Free.csproj
+│   │   Ookgewoon.Web.csproj
 │   │   Dockerfile
 │   │   global.json
 │   │   Program.cs

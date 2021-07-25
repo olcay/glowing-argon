@@ -4,11 +4,11 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
-using CreativeTim.Argon.DotNetCore.Free.Data;
-using CreativeTim.Argon.DotNetCore.Free.Infrastructure;
-using CreativeTim.Argon.DotNetCore.Free.Infrastructure.ApplicationUserClaims;
-using CreativeTim.Argon.DotNetCore.Free.Infrastructure.AppSettingsModels;
-using CreativeTim.Argon.DotNetCore.Free.Models.Identity;
+using Ookgewoon.Web.Data;
+using Ookgewoon.Web.Infrastructure;
+using Ookgewoon.Web.Infrastructure.ApplicationUserClaims;
+using Ookgewoon.Web.Infrastructure.AppSettingsModels;
+using Ookgewoon.Web.Models.Identity;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.DataProtection;
@@ -18,9 +18,9 @@ using Microsoft.AspNetCore.Mvc.ApplicationModels;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using CreativeTim.Argon.DotNetCore.Free.Infrastructure.Startup;
+using Ookgewoon.Web.Infrastructure.Startup;
 
-namespace CreativeTim.Argon.DotNetCore.Free
+namespace Ookgewoon.Web
 {
     public class Startup
     {

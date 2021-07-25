@@ -15,7 +15,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "CreativeTim.Argon.DotNetCore.Free": {
+    "Ookgewoon.Web": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {

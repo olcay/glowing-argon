@@ -1,14 +1,14 @@
 using System;
 using System.Threading;
 using System.Threading.Tasks;
-using CreativeTim.Argon.DotNetCore.Free.Data.Seeders;
-using CreativeTim.Argon.DotNetCore.Free.Models.Identity;
+using Ookgewoon.Web.Data.Seeders;
+using Ookgewoon.Web.Models.Identity;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace CreativeTim.Argon.DotNetCore.Free.Infrastructure.Startup
+namespace Ookgewoon.Web.Infrastructure.Startup
 {
     /// Used to perform database schema migration and data seeding at application startup
     public class DbSeederHostedService : IHostedService

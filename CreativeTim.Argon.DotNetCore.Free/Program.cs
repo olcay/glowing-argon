@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
-namespace CreativeTim.Argon.DotNetCore.Free
+namespace Ookgewoon.Web
 {
     public class Program
     {

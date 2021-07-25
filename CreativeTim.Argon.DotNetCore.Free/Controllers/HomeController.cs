@@ -1,17 +1,17 @@
-﻿using System.Diagnostics;
+using System.Diagnostics;
 using System.Threading.Tasks;
-using CreativeTim.Argon.DotNetCore.Free.Infrastructure;
-using CreativeTim.Argon.DotNetCore.Free.Infrastructure.ErrorHandling;
+using Ookgewoon.Web.Infrastructure;
+using Ookgewoon.Web.Infrastructure.ErrorHandling;
 using Microsoft.AspNetCore.Mvc;
-using CreativeTim.Argon.DotNetCore.Free.Models;
-using CreativeTim.Argon.DotNetCore.Free.Models.Identity;
+using Ookgewoon.Web.Models;
+using Ookgewoon.Web.Models.Identity;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
 
-namespace CreativeTim.Argon.DotNetCore.Free.Controllers
+namespace Ookgewoon.Web.Controllers
 {
     [Authorize]
     public class HomeController : BaseController

@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using System.Security.Claims;
 
-namespace CreativeTim.Argon.DotNetCore.Free.Infrastructure.ApplicationUserClaims
+namespace Ookgewoon.Web.Infrastructure.ApplicationUserClaims
 {
     public static class ApplicationUserClaimsPrincipalExtensions
     {

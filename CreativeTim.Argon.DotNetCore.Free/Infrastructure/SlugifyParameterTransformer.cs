@@ -1,7 +1,7 @@
 ﻿using System.Text.RegularExpressions;
 using Microsoft.AspNetCore.Routing;
 
-namespace CreativeTim.Argon.DotNetCore.Free.Infrastructure
+namespace Ookgewoon.Web.Infrastructure
 {
     public class SlugifyParameterTransformer : IOutboundParameterTransformer
     {
