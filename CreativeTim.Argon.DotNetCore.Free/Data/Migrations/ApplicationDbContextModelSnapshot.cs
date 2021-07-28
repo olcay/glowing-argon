@@ -197,7 +197,8 @@ namespace Ookgewoon.Web.Data.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("character varying(100)")
+                        .HasMaxLength(100);
 
                     b.Property<int?>("ParentCategoryId")
                         .HasColumnType("integer");
@@ -306,36 +307,337 @@ namespace Ookgewoon.Web.Data.Migrations
                         new
                         {
                             Id = 15,
-                            Name = "Beschermd wonen",
+                            Name = "Boerderij",
+                            ParentCategoryId = 2,
+                            Type = 1
+                        },
+                        new
+                        {
+                            Id = 16,
+                            Name = "Buurthuis",
+                            ParentCategoryId = 2,
+                            Type = 1
+                        },
+                        new
+                        {
+                            Id = 17,
+                            Name = "Dieren",
+                            ParentCategoryId = 2,
+                            Type = 1
+                        },
+                        new
+                        {
+                            Id = 18,
+                            Name = "Fabriek",
+                            ParentCategoryId = 2,
+                            Type = 1
+                        },
+                        new
+                        {
+                            Id = 19,
+                            Name = "Fietsenmakerij",
+                            ParentCategoryId = 2,
+                            Type = 1
+                        },
+                        new
+                        {
+                            Id = 20,
+                            Name = "Garage",
+                            ParentCategoryId = 2,
+                            Type = 1
+                        },
+                        new
+                        {
+                            Id = 21,
+                            Name = "Groenvoorziening",
+                            ParentCategoryId = 2,
+                            Type = 1
+                        },
+                        new
+                        {
+                            Id = 22,
+                            Name = "Handenarbeid",
+                            ParentCategoryId = 2,
+                            Type = 1
+                        },
+                        new
+                        {
+                            Id = 23,
+                            Name = "Horeca",
+                            ParentCategoryId = 2,
+                            Type = 1
+                        },
+                        new
+                        {
+                            Id = 24,
+                            Name = "Hotel",
+                            ParentCategoryId = 2,
+                            Type = 1
+                        },
+                        new
+                        {
+                            Id = 25,
+                            Name = "Houtbewerking",
+                            ParentCategoryId = 2,
+                            Type = 1
+                        },
+                        new
+                        {
+                            Id = 26,
+                            Name = "Koken",
+                            ParentCategoryId = 2,
+                            Type = 1
+                        },
+                        new
+                        {
+                            Id = 27,
+                            Name = "Muziek",
+                            ParentCategoryId = 2,
+                            Type = 1
+                        },
+                        new
+                        {
+                            Id = 28,
+                            Name = "Recreatie",
+                            ParentCategoryId = 2,
+                            Type = 1
+                        },
+                        new
+                        {
+                            Id = 29,
+                            Name = "Recycling",
+                            ParentCategoryId = 2,
+                            Type = 1
+                        },
+                        new
+                        {
+                            Id = 30,
+                            Name = "Schoonmaak",
+                            ParentCategoryId = 2,
+                            Type = 1
+                        },
+                        new
+                        {
+                            Id = 31,
+                            Name = "Sport",
+                            ParentCategoryId = 2,
+                            Type = 1
+                        },
+                        new
+                        {
+                            Id = 32,
+                            Name = "Wasserette",
+                            ParentCategoryId = 2,
+                            Type = 1
+                        },
+                        new
+                        {
+                            Id = 33,
+                            Name = "Winkel",
+                            ParentCategoryId = 2,
+                            Type = 1
+                        },
+                        new
+                        {
+                            Id = 34,
+                            Name = "Overig",
+                            ParentCategoryId = 2,
+                            Type = 1
+                        },
+                        new
+                        {
+                            Id = 35,
+                            Name = "Voor het gezin",
+                            ParentCategoryId = 3,
+                            Type = 1
+                        },
+                        new
+                        {
+                            Id = 36,
+                            Name = "Natuur & dieren",
+                            ParentCategoryId = 3,
+                            Type = 1
+                        },
+                        new
+                        {
+                            Id = 37,
+                            Name = "Actief uitje",
+                            ParentCategoryId = 3,
+                            Type = 1
+                        },
+                        new
+                        {
+                            Id = 38,
+                            Name = "Creatief & koken",
+                            ParentCategoryId = 3,
+                            Type = 1
+                        },
+                        new
+                        {
+                            Id = 39,
+                            Name = "Musea, film en theater",
+                            ParentCategoryId = 3,
+                            Type = 1
+                        },
+                        new
+                        {
+                            Id = 40,
+                            Name = "Eten & drinken",
+                            ParentCategoryId = 3,
+                            Type = 1
+                        },
+                        new
+                        {
+                            Id = 41,
+                            Name = "Bezienswaardigheden",
+                            ParentCategoryId = 3,
+                            Type = 1
+                        },
+                        new
+                        {
+                            Id = 42,
+                            Name = "Overig",
+                            ParentCategoryId = 3,
+                            Type = 1
+                        },
+                        new
+                        {
+                            Id = 43,
+                            Name = "Nachtje weg",
+                            ParentCategoryId = 4,
+                            Type = 1
+                        },
+                        new
+                        {
+                            Id = 44,
+                            Name = "Vakantieplekken",
+                            ParentCategoryId = 4,
+                            Type = 1
+                        },
+                        new
+                        {
+                            Id = 45,
+                            Name = "Kamp",
+                            ParentCategoryId = 4,
+                            Type = 1
+                        },
+                        new
+                        {
+                            Id = 46,
+                            Name = "Scouting",
+                            ParentCategoryId = 5,
+                            Type = 1
+                        },
+                        new
+                        {
+                            Id = 47,
+                            Name = "Paardrijden",
+                            ParentCategoryId = 5,
+                            Type = 1
+                        },
+                        new
+                        {
+                            Id = 48,
+                            Name = "Voetbal",
+                            ParentCategoryId = 5,
+                            Type = 1
+                        },
+                        new
+                        {
+                            Id = 49,
+                            Name = "Hockey",
+                            ParentCategoryId = 5,
+                            Type = 1
+                        },
+                        new
+                        {
+                            Id = 50,
+                            Name = "Andere sporten",
+                            ParentCategoryId = 5,
+                            Type = 1
+                        },
+                        new
+                        {
+                            Id = 51,
+                            Name = "Rolstoel",
                             ParentCategoryId = 6,
                             Type = 2
                         },
                         new
                         {
-                            Id = 16,
-                            Name = "Begeleid wonen",
+                            Id = 52,
+                            Name = "Prikkelgevoelig",
+                            ParentCategoryId = 6,
+                            Type = 2
+                        },
+                        new
+                        {
+                            Id = 53,
+                            Name = "Verstandelijke beperking",
+                            ParentCategoryId = 6,
+                            Type = 2
+                        },
+                        new
+                        {
+                            Id = 54,
+                            Name = "Visuele beperking",
+                            ParentCategoryId = 6,
+                            Type = 2
+                        },
+                        new
+                        {
+                            Id = 55,
+                            Name = "Auditieve beperking",
+                            ParentCategoryId = 6,
+                            Type = 2
+                        },
+                        new
+                        {
+                            Id = 56,
+                            Name = "Geen voorkeur",
                             ParentCategoryId = 7,
                             Type = 2
                         },
                         new
                         {
-                            Id = 17,
-                            Name = "Gezinshuizen",
-                            ParentCategoryId = 8,
+                            Id = 57,
+                            Name = "0 - 4 jaar",
+                            ParentCategoryId = 7,
                             Type = 2
                         },
                         new
                         {
-                            Id = 18,
-                            Name = "Logeeradressen",
-                            ParentCategoryId = 9,
+                            Id = 58,
+                            Name = "5 - 12 jaar",
+                            ParentCategoryId = 7,
                             Type = 2
                         },
                         new
                         {
-                            Id = 19,
-                            Name = "Ouderinitiatieven",
-                            ParentCategoryId = 10,
+                            Id = 59,
+                            Name = "13 - 18 jaar",
+                            ParentCategoryId = 7,
+                            Type = 2
+                        },
+                        new
+                        {
+                            Id = 60,
+                            Name = "19 - 24 jaar",
+                            ParentCategoryId = 7,
+                            Type = 2
+                        },
+                        new
+                        {
+                            Id = 61,
+                            Name = "Volwassenen",
+                            ParentCategoryId = 7,
+                            Type = 2
+                        },
+                        new
+                        {
+                            Id = 62,
+                            Name = "Ouderen",
+                            ParentCategoryId = 7,
                             Type = 2
                         });
                 });
@@ -347,26 +649,79 @@ namespace Ookgewoon.Web.Data.Migrations
                         .HasColumnType("uuid");
 
                     b.Property<string>("Brief")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<int>("Cost")
                         .HasColumnType("integer");
 
+                    b.Property<DateTimeOffset>("Created")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("CreatedById")
+                        .HasColumnType("text");
+
                     b.Property<string>("Email")
                         .HasColumnType("text");
 
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("boolean");
+
                     b.Property<Point>("Location")
+                        .IsRequired()
                         .HasColumnType("geometry");
+
+                    b.Property<int>("MainCategoryId")
+                        .HasColumnType("integer");
 
                     b.Property<string>("Phone")
                         .HasColumnType("text");
+
+                    b.Property<DateTimeOffset?>("Published")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("character varying(80)")
+                        .HasMaxLength(80);
+
+                    b.Property<DateTimeOffset?>("Updated")
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("Website")
                         .HasColumnType("text");
 
                     b.HasKey("Id");
 
+                    b.HasIndex("CreatedById");
+
+                    b.HasIndex("MainCategoryId");
+
                     b.ToTable("Entries");
+                });
+
+            modelBuilder.Entity("Ookgewoon.Web.Data.Entities.Image", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTimeOffset>("Created")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<Guid>("EntryId")
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("FileExtension")
+                        .IsRequired()
+                        .HasColumnType("character varying(4)")
+                        .HasMaxLength(4);
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("EntryId");
+
+                    b.ToTable("Image");
                 });
 
             modelBuilder.Entity("Ookgewoon.Web.Data.Entities.OpeningTime", b =>
@@ -404,7 +759,9 @@ namespace Ookgewoon.Web.Data.Migrations
                         .HasColumnType("uuid");
 
                     b.Property<string>("Name")
-                        .HasColumnType("text");
+                        .IsRequired()
+                        .HasColumnType("character varying(100)")
+                        .HasMaxLength(100);
 
                     b.HasKey("Id");
 
@@ -570,6 +927,28 @@ namespace Ookgewoon.Web.Data.Migrations
                     b.HasOne("Ookgewoon.Web.Data.Entities.Category", "ParentCategory")
                         .WithMany()
                         .HasForeignKey("ParentCategoryId");
+                });
+
+            modelBuilder.Entity("Ookgewoon.Web.Data.Entities.Entry", b =>
+                {
+                    b.HasOne("Ookgewoon.Web.Models.Identity.ApplicationUser", "CreatedBy")
+                        .WithMany()
+                        .HasForeignKey("CreatedById");
+
+                    b.HasOne("Ookgewoon.Web.Data.Entities.Category", "MainCategory")
+                        .WithMany()
+                        .HasForeignKey("MainCategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Ookgewoon.Web.Data.Entities.Image", b =>
+                {
+                    b.HasOne("Ookgewoon.Web.Data.Entities.Entry", "Entry")
+                        .WithMany("Images")
+                        .HasForeignKey("EntryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Ookgewoon.Web.Data.Entities.OpeningTime", b =>

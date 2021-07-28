@@ -14,6 +14,7 @@ namespace Ookgewoon.Web.Data.Entities
         public int? ParentCategoryId { get; set; }
 
         [Required]
+        [MaxLength(100)]
         public string Name { get; set; }
 
         public CategoryType Type { get; set; }

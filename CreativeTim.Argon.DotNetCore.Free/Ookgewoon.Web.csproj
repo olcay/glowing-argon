@@ -12,8 +12,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Data\Migrations\20210725000239_AddEntries.cs" />
-    <Compile Remove="Data\Migrations\20210725000239_AddEntries.Designer.cs" />
+    <Compile Remove="Data\Migrations\20210728163619_Entries.cs" />
+    <Compile Remove="Data\Migrations\20210728163619_Entries.Designer.cs" />
   </ItemGroup>
 
 

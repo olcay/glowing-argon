@@ -29,20 +29,7 @@ namespace Ookgewoon.Web.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            // !! Note:
-            //
-            // If you switch database providers, you might be required to re-create the migrations
-            // as they are not always compatible between database systems
-
-            // The easiest option for development outside a container is to use SQLite
-            // options.UseSqlite(Configuration.GetConnectionString("SqliteConnection"));
-            // Or use this for PostgreSQL:
             options.UseNpgsql(GetConnectionString("DATABASE_URL"), o => o.UseNetTopologySuite());
-
-            // Use this to connect to a MySQL server:
-            // options.UseMySQL(Configuration.GetConnectionString("MysqlConnection"));
-            // Or use this for SQL Server (if running on Windows):
-            // options.UseSqlServer(Configuration.GetConnectionString("MsSqlConnection"));
         }
 
         protected override void OnModelCreating(ModelBuilder builder)
@@ -69,11 +56,59 @@ namespace Ookgewoon.Web.Data
                 new Category { Type = CategoryType.Main, Id = 13, Name = "Seniorenwoning", ParentCategoryId = 1 },
                 new Category { Type = CategoryType.Main, Id = 14, Name = "Zelfstandig wonen", ParentCategoryId = 1 },
 
-                new Category { Type = CategoryType.Accessibility, Id = 15, Name = "Beschermd wonen", ParentCategoryId = 6 },
-                new Category { Type = CategoryType.Accessibility, Id = 16, Name = "Begeleid wonen", ParentCategoryId = 7 },
-                new Category { Type = CategoryType.Accessibility, Id = 17, Name = "Gezinshuizen", ParentCategoryId = 8 },
-                new Category { Type = CategoryType.Accessibility, Id = 18, Name = "Logeeradressen", ParentCategoryId = 9 },
-                new Category { Type = CategoryType.Accessibility, Id = 19, Name = "Ouderinitiatieven", ParentCategoryId = 10 },
+                new Category { Type = CategoryType.Main, Id = 15, Name = "Boerderij", ParentCategoryId = 2 },
+                new Category { Type = CategoryType.Main, Id = 16, Name = "Buurthuis", ParentCategoryId = 2 },
+                new Category { Type = CategoryType.Main, Id = 17, Name = "Dieren", ParentCategoryId = 2 },
+                new Category { Type = CategoryType.Main, Id = 18, Name = "Fabriek", ParentCategoryId = 2 },
+                new Category { Type = CategoryType.Main, Id = 19, Name = "Fietsenmakerij", ParentCategoryId = 2 },
+                new Category { Type = CategoryType.Main, Id = 20, Name = "Garage", ParentCategoryId = 2 },
+                new Category { Type = CategoryType.Main, Id = 21, Name = "Groenvoorziening", ParentCategoryId = 2 },
+                new Category { Type = CategoryType.Main, Id = 22, Name = "Handenarbeid", ParentCategoryId = 2 },
+                new Category { Type = CategoryType.Main, Id = 23, Name = "Horeca", ParentCategoryId = 2 },
+                new Category { Type = CategoryType.Main, Id = 24, Name = "Hotel", ParentCategoryId = 2 },
+                new Category { Type = CategoryType.Main, Id = 25, Name = "Houtbewerking", ParentCategoryId = 2 },
+                new Category { Type = CategoryType.Main, Id = 26, Name = "Koken", ParentCategoryId = 2 },
+                new Category { Type = CategoryType.Main, Id = 27, Name = "Muziek", ParentCategoryId = 2 },
+                new Category { Type = CategoryType.Main, Id = 28, Name = "Recreatie", ParentCategoryId = 2 },
+                new Category { Type = CategoryType.Main, Id = 29, Name = "Recycling", ParentCategoryId = 2 },
+                new Category { Type = CategoryType.Main, Id = 30, Name = "Schoonmaak", ParentCategoryId = 2 },
+                new Category { Type = CategoryType.Main, Id = 31, Name = "Sport", ParentCategoryId = 2 },
+                new Category { Type = CategoryType.Main, Id = 32, Name = "Wasserette", ParentCategoryId = 2 },
+                new Category { Type = CategoryType.Main, Id = 33, Name = "Winkel", ParentCategoryId = 2 },
+                new Category { Type = CategoryType.Main, Id = 34, Name = "Overig", ParentCategoryId = 2 },
+
+                new Category { Type = CategoryType.Main, Id = 35, Name = "Voor het gezin", ParentCategoryId = 3 },
+                new Category { Type = CategoryType.Main, Id = 36, Name = "Natuur & dieren", ParentCategoryId = 3 },
+                new Category { Type = CategoryType.Main, Id = 37, Name = "Actief uitje", ParentCategoryId = 3 },
+                new Category { Type = CategoryType.Main, Id = 38, Name = "Creatief & koken", ParentCategoryId = 3 },
+                new Category { Type = CategoryType.Main, Id = 39, Name = "Musea, film en theater", ParentCategoryId = 3 },
+                new Category { Type = CategoryType.Main, Id = 40, Name = "Eten & drinken", ParentCategoryId = 3 },
+                new Category { Type = CategoryType.Main, Id = 41, Name = "Bezienswaardigheden", ParentCategoryId = 3 },
+                new Category { Type = CategoryType.Main, Id = 42, Name = "Overig", ParentCategoryId = 3 },
+
+                new Category { Type = CategoryType.Main, Id = 43, Name = "Nachtje weg", ParentCategoryId = 4 },
+                new Category { Type = CategoryType.Main, Id = 44, Name = "Vakantieplekken", ParentCategoryId = 4 },
+                new Category { Type = CategoryType.Main, Id = 45, Name = "Kamp", ParentCategoryId = 4 },
+
+                new Category { Type = CategoryType.Main, Id = 46, Name = "Scouting", ParentCategoryId = 5 },
+                new Category { Type = CategoryType.Main, Id = 47, Name = "Paardrijden", ParentCategoryId = 5 },
+                new Category { Type = CategoryType.Main, Id = 48, Name = "Voetbal", ParentCategoryId = 5 },
+                new Category { Type = CategoryType.Main, Id = 49, Name = "Hockey", ParentCategoryId = 5 },
+                new Category { Type = CategoryType.Main, Id = 50, Name = "Andere sporten", ParentCategoryId = 5 },
+
+                new Category { Type = CategoryType.Accessibility, Id = 51, Name = "Rolstoel", ParentCategoryId = 6 },
+                new Category { Type = CategoryType.Accessibility, Id = 52, Name = "Prikkelgevoelig", ParentCategoryId = 6 },
+                new Category { Type = CategoryType.Accessibility, Id = 53, Name = "Verstandelijke beperking", ParentCategoryId = 6 },
+                new Category { Type = CategoryType.Accessibility, Id = 54, Name = "Visuele beperking", ParentCategoryId = 6 },
+                new Category { Type = CategoryType.Accessibility, Id = 55, Name = "Auditieve beperking", ParentCategoryId = 6 },
+
+                new Category { Type = CategoryType.Accessibility, Id = 56, Name = "Geen voorkeur", ParentCategoryId = 7 },
+                new Category { Type = CategoryType.Accessibility, Id = 57, Name = "0 - 4 jaar", ParentCategoryId = 7 },
+                new Category { Type = CategoryType.Accessibility, Id = 58, Name = "5 - 12 jaar", ParentCategoryId = 7 },
+                new Category { Type = CategoryType.Accessibility, Id = 59, Name = "13 - 18 jaar", ParentCategoryId = 7 },
+                new Category { Type = CategoryType.Accessibility, Id = 60, Name = "19 - 24 jaar", ParentCategoryId = 7 },
+                new Category { Type = CategoryType.Accessibility, Id = 61, Name = "Volwassenen", ParentCategoryId = 7 },
+                new Category { Type = CategoryType.Accessibility, Id = 62, Name = "Ouderen", ParentCategoryId = 7 }
             };
 
             builder.Entity<Category>().HasData(allCategories);

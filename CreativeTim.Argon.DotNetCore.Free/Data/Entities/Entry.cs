@@ -18,8 +18,12 @@ namespace Ookgewoon.Web.Data.Entities
 
         public string CreatedById { get; set; }
 
+        [Required]
+        [MaxLength(80)]
+        public string Title { get; set; }
+
+        [Required]
         [DataType(DataType.MultilineText)]
-        [MaxLength(1500)]
         public string Brief { get; set; }
 
         [DataType(DataType.Url)]
@@ -31,9 +35,16 @@ namespace Ookgewoon.Web.Data.Entities
         [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
 
+        [Required]
         public Point Location { get; set; }
 
         public Cost Cost { get; set; }
+
+        [Required]
+        [ForeignKey("MainCategoryId")]
+        public Category MainCategory { get; set; }
+
+        public int MainCategoryId { get; set; }
 
         [Required]
         public DateTimeOffset Created { get; set; }
